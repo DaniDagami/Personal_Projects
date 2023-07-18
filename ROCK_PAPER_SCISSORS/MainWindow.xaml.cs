@@ -12,6 +12,8 @@ namespace ROCK_PAPER_SCISSORS
         private Random random = new Random();
         private string computer;
         private static bool gameEnd = true;
+        private int cWins = 0;
+        private int pWins = 0;
 
         public MainWindow()
         {
@@ -134,10 +136,12 @@ namespace ROCK_PAPER_SCISSORS
                     if (computer == "PAPER")
                     {
                         VS.Content = "YOU LOST";
+                        cWins++;
                     }
                     if (computer == "SCISSORS")
                     {
                         VS.Content = "YOU WON";
+                        pWins++;
                     }
                     break;
 
@@ -153,6 +157,7 @@ namespace ROCK_PAPER_SCISSORS
                     if (computer == "ROCK")
                     {
                         VS.Content = "YOU WON";
+                        pWins++;
                     }
                     if (computer == "PAPER")
                     {
@@ -161,6 +166,7 @@ namespace ROCK_PAPER_SCISSORS
                     if (computer == "SCISSORS")
                     {
                         VS.Content = "YOU LOST";
+                        cWins++;
                     }
                     break;
 
@@ -176,10 +182,12 @@ namespace ROCK_PAPER_SCISSORS
                     if (computer == "ROCK")
                     {
                         VS.Content = "YOU LOST";
+                        cWins++;
                     }
                     if (computer == "PAPER")
                     {
                         VS.Content = "YOU WON";
+                        pWins++;
                     }
                     if (computer == "SCISSORS")
                     {
@@ -191,7 +199,8 @@ namespace ROCK_PAPER_SCISSORS
             }
 
             #endregion Player_Choise
-
+            CWINS.Content= cWins;
+            PWINS.Content = pWins;
             player = "";
             computer = "";
             gameEnd = false;

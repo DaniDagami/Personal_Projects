@@ -11,7 +11,7 @@
     </Window.Resources>
     <Grid>
         <Grid.RowDefinitions>
-            <RowDefinition Height="50" />
+            <RowDefinition Height="150" />
             <RowDefinition Height="*" />
             <RowDefinition Height="100" />
             <RowDefinition Height="*" />
@@ -40,6 +40,8 @@
         </Button>
 
         <Label x:Name="VS" Content="VS" Grid.ColumnSpan="3" Grid.Column="2" Grid.Row="3" FontSize="62" FontFamily="Broadway" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" />
+        <Label x:Name="PWINS" Content="0" Grid.ColumnSpan="2" Grid.Column="1" Grid.Row="0" FontSize="80" FontWeight="DemiBold" FontFamily="Broadway" VerticalContentAlignment="Center" HorizontalContentAlignment="Left" Padding="45 0 0 0"/>
+        <Label x:Name="CWINS" Content="0" Grid.ColumnSpan="2" Grid.Column="4" Grid.Row="0" FontSize="80" FontWeight="DemiBold" FontFamily="Broadway" VerticalContentAlignment="Center" HorizontalContentAlignment="Right" Padding="0 0 45 0"/>
 
         <Image x:Name="cROCK" Source="/moai.png" Grid.Column="5" Grid.Row="1" Visibility="Visible" />
         <Image x:Name="cPAPER" Source="/paper.png" Grid.Column="5" Grid.Row="3" Visibility="Visible" />
