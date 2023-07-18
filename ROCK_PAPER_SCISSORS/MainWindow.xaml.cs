@@ -7,11 +7,13 @@ namespace ROCK_PAPER_SCISSORS
     /// <summary>
     /// Interaction logic for MainWindow.xaml
     /// </summary>
-    public partial class MainWindow : Window, Engine
+    public partial class MainWindow : Window
     {
         private Random random = new Random();
-        private string computer;
+        private string? computer;
         private static bool gameEnd = true;
+        private int cWins = 0;
+        private int pWins = 0;
 
         public MainWindow()
         {
@@ -20,23 +22,33 @@ namespace ROCK_PAPER_SCISSORS
 
         private void ROCK_Click(object sender, RoutedEventArgs e)
         {
-            Run("ROCK");
+            if (gameEnd)
+                Run("ROCK");
+            else
+                NewGame();
         }
 
         private void PAPER_Click(object sender, RoutedEventArgs e)
         {
-            Run("PAPER");
+            if (gameEnd)
+                Run("PAPER");
+            else
+                NewGame();
         }
 
         private void SCISSORS_Click(object sender, RoutedEventArgs e)
         {
-            Run("SCISSORS");
+            if (gameEnd)
+                Run("SCISSORS");
+            else
+                NewGame();
         }
+
         private void Window_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
         {
             if (!gameEnd)
             {
-                Reset();
+                NewGame();
             }
         }
 
@@ -124,10 +136,12 @@ namespace ROCK_PAPER_SCISSORS
                     if (computer == "PAPER")
                     {
                         VS.Content = "YOU LOST";
+                        cWins++;
                     }
                     if (computer == "SCISSORS")
                     {
                         VS.Content = "YOU WON";
+                        pWins++;
                     }
                     break;
 
@@ -143,6 +157,7 @@ namespace ROCK_PAPER_SCISSORS
                     if (computer == "ROCK")
                     {
                         VS.Content = "YOU WON";
+                        pWins++;
                     }
                     if (computer == "PAPER")
                     {
@@ -151,6 +166,7 @@ namespace ROCK_PAPER_SCISSORS
                     if (computer == "SCISSORS")
                     {
                         VS.Content = "YOU LOST";
+                        cWins++;
                     }
                     break;
 
@@ -166,10 +182,12 @@ namespace ROCK_PAPER_SCISSORS
                     if (computer == "ROCK")
                     {
                         VS.Content = "YOU LOST";
+                        cWins++;
                     }
                     if (computer == "PAPER")
                     {
                         VS.Content = "YOU WON";
+                        pWins++;
                     }
                     if (computer == "SCISSORS")
                     {
@@ -182,12 +200,14 @@ namespace ROCK_PAPER_SCISSORS
 
             #endregion Player_Choise
 
+            CWINS.Content = cWins;
+            PWINS.Content = pWins;
             player = "";
             computer = "";
             gameEnd = false;
         }
 
-        private void Reset()
+        private void NewGame()
         {
             ROCK.Visibility = Visibility.Visible;
             PAPER.Visibility = Visibility.Visible;
@@ -196,6 +216,7 @@ namespace ROCK_PAPER_SCISSORS
             cPAPER.Visibility = Visibility.Visible;
             cSCISSORS.Visibility = Visibility.Visible;
             VS.Content = "VS";
+            gameEnd = true;
         }
     }
 }
