@@ -44,7 +44,7 @@ namespace ROCK_PAPER_SCISSORS {
         /// InitializeComponent
         /// </summary>
         [System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [System.CodeDom.Compiler.GeneratedCodeAttribute("PresentationBuildTasks", "6.0.9.0")]
+        [System.CodeDom.Compiler.GeneratedCodeAttribute("PresentationBuildTasks", "7.0.0.0")]
         public void InitializeComponent() {
             
             #line 4 "..\..\..\App.xaml"
@@ -59,7 +59,7 @@ namespace ROCK_PAPER_SCISSORS {
         /// </summary>
         [System.STAThreadAttribute()]
         [System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [System.CodeDom.Compiler.GeneratedCodeAttribute("PresentationBuildTasks", "6.0.9.0")]
+        [System.CodeDom.Compiler.GeneratedCodeAttribute("PresentationBuildTasks", "7.0.0.0")]
         public static void Main() {
             ROCK_PAPER_SCISSORS.App app = new ROCK_PAPER_SCISSORS.App();
             app.InitializeComponent();

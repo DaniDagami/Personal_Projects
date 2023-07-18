@@ -20,23 +20,33 @@ namespace ROCK_PAPER_SCISSORS
 
         private void ROCK_Click(object sender, RoutedEventArgs e)
         {
-            Run("ROCK");
+            if (gameEnd)
+                Run("ROCK");
+            else
+                NewGame();
         }
 
         private void PAPER_Click(object sender, RoutedEventArgs e)
         {
-            Run("PAPER");
+            if (gameEnd)
+                Run("PAPER");
+            else
+                NewGame();
         }
 
         private void SCISSORS_Click(object sender, RoutedEventArgs e)
         {
-            Run("SCISSORS");
+            if (gameEnd)
+                Run("SCISSORS");
+            else
+                NewGame();
         }
+
         private void Window_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
         {
             if (!gameEnd)
             {
-                Reset();
+                NewGame();
             }
         }
 
@@ -187,7 +197,7 @@ namespace ROCK_PAPER_SCISSORS
             gameEnd = false;
         }
 
-        private void Reset()
+        private void NewGame()
         {
             ROCK.Visibility = Visibility.Visible;
             PAPER.Visibility = Visibility.Visible;
@@ -196,6 +206,7 @@ namespace ROCK_PAPER_SCISSORS
             cPAPER.Visibility = Visibility.Visible;
             cSCISSORS.Visibility = Visibility.Visible;
             VS.Content = "VS";
+            gameEnd = true;
         }
     }
 }
