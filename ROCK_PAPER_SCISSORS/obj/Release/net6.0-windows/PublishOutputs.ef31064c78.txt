@@ -1,5 +1,0 @@
-C:\Users\User\Desktop\New folder\Personal_Projects\ROCK_PAPER_SCISSORS\bin\Release\net6.0-windows\app.publish\ROCK_PAPER_SCISSORS.exe
-C:\Users\User\Desktop\New folder\Personal_Projects\ROCK_PAPER_SCISSORS\bin\Release\net6.0-windows\app.publish\ROCK_PAPER_SCISSORS.dll
-C:\Users\User\Desktop\New folder\Personal_Projects\ROCK_PAPER_SCISSORS\bin\Release\net6.0-windows\app.publish\ROCK_PAPER_SCISSORS.deps.json
-C:\Users\User\Desktop\New folder\Personal_Projects\ROCK_PAPER_SCISSORS\bin\Release\net6.0-windows\app.publish\ROCK_PAPER_SCISSORS.runtimeconfig.json
-C:\Users\User\Desktop\New folder\Personal_Projects\ROCK_PAPER_SCISSORS\bin\Release\net6.0-windows\app.publish\ROCK_PAPER_SCISSORS.pdb
