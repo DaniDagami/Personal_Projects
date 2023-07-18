@@ -1,0 +1,22 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net6.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="moai.png" />
+    <None Remove="paper.png" />
+    <None Remove="scissors.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="moai.png" />
+    <Resource Include="paper.png" />
+    <Resource Include="scissors.png" />
+  </ItemGroup>
+
+</Project>
