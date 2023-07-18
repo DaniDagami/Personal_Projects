@@ -38,3 +38,7 @@ C:\Users\User\Desktop\New folder\Personal_Projects\ROCK_PAPER_SCISSORS\obj\Relea
 C:\Users\User\Desktop\New folder\Personal_Projects\ROCK_PAPER_SCISSORS\obj\Release\net6.0-windows\ROCK_PAPER_SCISSORS.pdb
 C:\Users\User\Desktop\New folder\Personal_Projects\ROCK_PAPER_SCISSORS\obj\Release\net6.0-windows\ROCK_PAPER_SCISSORS.genruntimeconfig.cache
 C:\Users\User\Desktop\New folder\Personal_Projects\ROCK_PAPER_SCISSORS\obj\Release\net6.0-windows\ref\ROCK_PAPER_SCISSORS.dll
+C:\Users\User\Desktop\New folder\Personal_Projects\ROCK_PAPER_SCISSORS\bin\Release\net6.0-windows\ROCK_PAPER_SCISSORS.dll.manifest
+C:\Users\User\Desktop\New folder\Personal_Projects\ROCK_PAPER_SCISSORS\bin\Release\net6.0-windows\ROCK_PAPER_SCISSORS.application
+C:\Users\User\Desktop\New folder\Personal_Projects\ROCK_PAPER_SCISSORS\obj\Release\net6.0-windows\ROCK_PAPER_SCISSORS.dll.manifest
+C:\Users\User\Desktop\New folder\Personal_Projects\ROCK_PAPER_SCISSORS\obj\Release\net6.0-windows\ROCK_PAPER_SCISSORS.application
