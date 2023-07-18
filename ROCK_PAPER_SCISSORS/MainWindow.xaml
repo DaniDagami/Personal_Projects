@@ -9,7 +9,7 @@
         <Style TargetType="Button">
         </Style>
     </Window.Resources>
-    <Grid>
+    <Grid x:Name="GRID" Visibility="Visible">
         <Grid.RowDefinitions>
             <RowDefinition Height="150" />
             <RowDefinition Height="*" />
@@ -36,7 +36,7 @@
             <Image Source="/paper.png" />
         </Button>
         <Button x:Name="SCISSORS" Grid.Column="1" Grid.Row="5" Click="SCISSORS_Click" BorderBrush="White" Background="White">
-            <Image Source="/scissors.png" />
+            <Image Source="/scissors.png"/>
         </Button>
 
         <Label x:Name="VS" Content="VS" Grid.ColumnSpan="3" Grid.Column="2" Grid.Row="3" FontSize="62" FontFamily="Broadway" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" />

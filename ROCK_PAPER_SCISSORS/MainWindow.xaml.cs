@@ -7,10 +7,10 @@ namespace ROCK_PAPER_SCISSORS
     /// <summary>
     /// Interaction logic for MainWindow.xaml
     /// </summary>
-    public partial class MainWindow : Window, Engine
+    public partial class MainWindow : Window
     {
         private Random random = new Random();
-        private string computer;
+        private string? computer;
         private static bool gameEnd = true;
         private int cWins = 0;
         private int pWins = 0;
