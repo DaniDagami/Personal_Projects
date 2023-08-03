@@ -1,0 +1,46 @@
+.parent {
+  border: 1px solid black;
+  background-color: black;
+  text-align: left;
+  display: flex;
+}
+
+.child {
+  display: inline-block;
+  background-color: #ffffff;
+  margin: 60px 60px 60px 60px;
+  padding: auto; 
+  width: 100%;
+  border: 1px solid white;
+  border-radius: 30px;
+  padding: 1rem 1rem;
+  vertical-align: top;
+  text-align: center;
+}
+
+body {
+  font-size: 30px;
+}
+
+ul {
+  font-style: italic;
+  display: inline-block;
+  text-align: left;
+}
+
+h1 {
+  background-color: #000000;
+  color: #ffffff;
+  border-radius: 30px;
+  width: 75%;
+  margin: auto;
+  text-size-adjust: auto;
+}
+/*h1 {
+max-width:100%;
+min-width:150px;
+width: 75%;
+background: #000000;
+color: #ffffff;
+border-radius: 30px;
+}*/
